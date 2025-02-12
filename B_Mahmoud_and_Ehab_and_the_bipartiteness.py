@@ -17,14 +17,6 @@ while todo:
         if not teams[next]:
             teams[next] = 2 if teams[curr] == 1 else 1
             todo.append(next)
-ans = 0
 count1 = teams.count(1)
 count2 = teams.count(2)
-for i in range(n):
-    if teams[i] == 1:
-        ans += max(0, count2 - len(adj[i]))
-        count1 -= 1
-    else:
-        ans += max(0, count1 - len(adj[i]))
-        count2 -= 1
-print(ans)
+print(count1 * count2 - (n - 1))
