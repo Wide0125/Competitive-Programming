@@ -16,7 +16,9 @@ teams[0] = 1
 while todo:
     curr = todo.pop()
     for next in adj[curr]:
-        teams[next] = 2 if teams[curr] == 1 else 1
+        if not teams[next]:
+            teams[next] = 2 if teams[curr] == 1 else 1
+            todo.append(next)
 ans = 0
 for i in range(n):
     for j in range(n):
