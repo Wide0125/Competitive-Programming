@@ -1,7 +1,6 @@
 n = int(input())
 edges = [list(map(int, input().split())) for _ in range(n - 1)]
 adj = [[] for _ in range(n)]
-adj_matrix = [[False] * n for _ in range(n)]
 for i in edges:
     a = i[0] - 1
     b = i[1] - 1
