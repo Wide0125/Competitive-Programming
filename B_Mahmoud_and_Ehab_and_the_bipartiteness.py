@@ -7,8 +7,6 @@ for i in edges:
     b = i[1] - 1
     adj[a].append(b)
     adj[b].append(a)
-    adj_matrix[a][b] = True
-    adj_matrix[b][a] = True
 teams = [0] * n
 
 todo = [0]
@@ -20,10 +18,9 @@ while todo:
             teams[next] = 2 if teams[curr] == 1 else 1
             todo.append(next)
 ans = 0
+count1 = teams.count(1)
+count2 = teams.count(2)
 for i in range(n):
     for j in range(n):
-        if not adj_matrix[i][j] and teams[i] != teams[j]:
-            ans += 1
-            adj_matrix[i][j] = True
-            adj_matrix[j][i] = True
+        
 print(ans)
