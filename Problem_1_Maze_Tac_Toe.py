@@ -81,4 +81,4 @@ while todo:  # DFS
                 b += cycle[i][1]
             todo.append([a, b, board.copy()])
 print(ans)
-
+string = "suicide"
