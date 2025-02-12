@@ -22,9 +22,11 @@ count1 = teams.count(1)
 count2 = teams.count(2)
 for i in range(n):
     if teams[i] == 1:
-        ans += count2 - len(adj[i])
-        count2 -= 1
+        if count2 > len(adj[i]):
+            ans += count2 - len(adj[i])
+            count2 -= 1
     else:
-        ans += count1 - len(adj[i])
-        count1 -= 1
+        if count1 > len(adj[i]):
+            ans += count1 - len(adj[i])
+            count1 -= 1
 print(ans)
