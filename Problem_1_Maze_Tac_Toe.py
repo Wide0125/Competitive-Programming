@@ -1,3 +1,6 @@
+import sys
+input = sys.stdin.readline
+
 # TLE on cases 7 and 10
 def test_win(board):  # checks for winning board
     new_board = [[0] * 3 for _ in range(3)]
