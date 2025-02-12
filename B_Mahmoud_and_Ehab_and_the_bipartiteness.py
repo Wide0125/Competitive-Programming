@@ -5,8 +5,8 @@ adj_matrix = [[False] * n for _ in range(n)]
 for i in edges:
     a = i[0] - 1
     b = i[1] - 1
-    adj[a] = b
-    adj[b] = a
+    adj[a].append(b)
+    adj[b].append(a)
     adj_matrix[a][b] = True
     adj_matrix[b][a] = True
 teams = [0] * n
