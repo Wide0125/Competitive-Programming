@@ -11,12 +11,17 @@ teams = [0] * n
 
 todo = [0]
 teams[0] = 1
+count1 = 1
+count2 = 0
 while todo:
     curr = todo.pop()
     for next in adj[curr]:
         if not teams[next]:
-            teams[next] = 2 if teams[curr] == 1 else 1
+            if teams[curr] == 1:
+                teams[next] = 2
+                count2 += 1
+            else:
+                teams[next] = 1
+                count1 += 1
             todo.append(next)
-count1 = teams.count(1)
-count2 = teams.count(2)
 print(count1 * count2 - (n - 1))
