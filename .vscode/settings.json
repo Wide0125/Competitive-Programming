@@ -1,4 +1,10 @@
 {
-    "gitdoc.enabled": true,
-    "files.autoSave": "afterDelay"
+  "gitdoc.enabled": true,
+  "files.autoSave": "afterDelay",
+  "C_Cpp.default.compilerPath": "",
+  "C_Cpp.default.compileCommands": [
+    "cl.exe"
+  ],
+  "gitdoc.ai.enabled": true,
+  "gitdoc.commitValidationLevel": "error",
 }
