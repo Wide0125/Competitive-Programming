@@ -16,7 +16,7 @@ def check(max_sum):
             element += 1
         else:
             return False
-    return element == n and subarrays == k
+    return element == n - 1 and subarrays == k
 
 
 left = 0
