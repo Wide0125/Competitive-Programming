@@ -5,3 +5,4 @@ towers = list(map(int, input().split()))
 
 def check(r):
     for city in cities:
+        
