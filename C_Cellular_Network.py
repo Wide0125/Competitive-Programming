@@ -7,9 +7,9 @@ def check(r):
     tower = 0
     city = 0
     while city < n and tower < m:
-        if towers[tower] < city - r:
+        if towers[tower] < cities[city] - r:
             tower += 1
-        elif towers[tower] > city + r:
+        elif towers[tower] > cities[city] + r:
             return False
         else:
             city += 1
