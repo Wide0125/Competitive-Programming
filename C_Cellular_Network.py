@@ -13,7 +13,7 @@ def check(r):
             return False
         else:
             city += 1
-    return True
+    return city == n - 1
 
 
 left = 0
