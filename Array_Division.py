@@ -13,6 +13,7 @@ def check(max_sum):
         elif array[element] <= max_sum:
             curr_sub = array[element]
             subarrays += 1
+            element += 1
         else:
             return False
     return element == n
