@@ -3,7 +3,7 @@ array = list(map(int, input().split()))
 
 
 def check(max_sum):
-    subarrays = 0
+    subarrays = 1
     element = 0
     curr_sub = 0
     while subarrays < k and element < n:
@@ -16,7 +16,7 @@ def check(max_sum):
             element += 1
         else:
             return False
-    return element == n
+    return element == n and subarrays == k
 
 
 left = 0
