@@ -8,7 +8,6 @@ def query(mid):
 
 
 k = int(input()) - 1
-input()
 left = 0
 right = n
 while left < right - 1:
@@ -18,4 +17,3 @@ while left < right - 1:
     else:
         right = mid
 print(f"! {right}")
-exit()
