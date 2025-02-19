@@ -9,11 +9,11 @@ def query(mid):
 
 
 for a in range(t):
-    k = int(input())
+    k = int(input()) - 1
     input()
     left = 0
     right = n
-    while left < right:
+    while left < right - 1:
         mid = (left + right) // 2
         if query(mid):
             left = mid
