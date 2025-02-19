@@ -6,7 +6,7 @@ def check(max_sum):
     subarrays = 1
     element = 0
     curr_sub = 0
-    while subarrays < k and element < n:
+    while element < n:
         if curr_sub + array[element] <= max_sum:
             curr_sub += array[element]
             element += 1
@@ -16,7 +16,7 @@ def check(max_sum):
             element += 1
         else:
             return False
-    return element == n - 1 and subarrays == k
+    return subarrays <= k
 
 
 left = 0
