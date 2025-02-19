@@ -19,7 +19,7 @@ def check(r):
 left = 0
 right = int(1e9)
 while left < right:
-    mid = (left + right + 1) // 2
+    mid = (left + right) // 2
     if check(mid):
         right = mid
     else:
