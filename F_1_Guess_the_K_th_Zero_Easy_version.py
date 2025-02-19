@@ -4,7 +4,7 @@ n, t = map(int, input().split())
 def query(mid):
     print(f"? 1 {mid}")
     sum = int(input())
-    return mid - sum < k
+    return mid - sum <= k
 
 
 k = int(input()) - 1
