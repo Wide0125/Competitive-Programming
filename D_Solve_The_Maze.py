@@ -1,2 +1,1 @@
-for _ in range(int(input())):
-    n, m = map(int, input().split())
+print(f"Hello {input("Input your name please.")}")
