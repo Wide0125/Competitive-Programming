@@ -6,8 +6,8 @@ def duplicate_count(text):
         if count[letter_index] >= 2:
             continue
         count[letter_index] += 1
-        if letter_index >= 2:
+        if count[letter_index] >= 2:
             result += 1
     return result
 
-print(duplicate_count("abcde"))
+print(duplicate_count("strng"))
